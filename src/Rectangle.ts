@@ -1,4 +1,6 @@
-class Rectangle {
+import { Point } from "./Point";
+
+export class Rectangle {
     constructor(public x: number, public y: number, public width: number, public height: number) {}
 
     contains(point: Point): boolean {

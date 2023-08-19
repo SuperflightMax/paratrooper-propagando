@@ -2,6 +2,7 @@
 import { Application, Sprite, Loader } from 'pixi.js';
 import { Movable } from './Movable';
 import { Point } from './Point';
+import { CFG } from './Props';
 
 export class Renderer {
     static MOUSE_X: number = 0;
@@ -11,9 +12,9 @@ export class Renderer {
     sprites: { [key: string]: Sprite } = {};
 
     constructor() {
-        this.app = new Application({tsc
-            width: GameProperties.GAME_WIDTH,
-            height: GameProperties.GAME_HEIGHT,
+        this.app = new Application({
+            width: CFG.GAME_WIDTH,
+            height: CFG.GAME_HEIGHT,
         });
 
         document.body.appendChild(this.app.view);

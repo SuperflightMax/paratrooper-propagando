@@ -1,6 +1,7 @@
 // Paratrooper.ts
 import { Point } from "./Point";
 import { GameObject } from "./GameObject";
+import { CFG } from "./Props";
 
 
 export class Paratrooper extends GameObject  

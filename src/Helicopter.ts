@@ -1,18 +1,21 @@
 // Helicopter.ts
-import { Point } from "./Point";
+
 import { GameObject } from "./GameObject";
-import { HELICOPTER_SPEED } from "./Properties";
 import {Movable} from "./Movable";
 
-export class Helicopter extends GameObject  {
 
+export class Helicopter extends GameObject  
+{
     cargo: Movable[];
-    constructor(x: number, y: number, vx: number, vy) 
-    {        super(x, y, direction);
+
+    constructor() 
+    {
+        super();
         this.cargo = [];
     }
 
-    addCargo(item: Movable) {
+    addCargo(item: Movable) 
+    {
         this.cargo.push(item);
     }
 

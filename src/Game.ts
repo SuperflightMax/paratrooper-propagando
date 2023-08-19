@@ -63,12 +63,12 @@ export class Game
         const targets = this.objects.filter(obj => !(obj instanceof Bullet));
         let toRemove = [];
 
-        for (let i = bullets.length - 1; i >= 0; i--) 
+        for (let i = bullets.length - 1; i >= 0; i--)       
         {
             const bullet:GameObject = bullets[i] as GameObject;
 
             for (let j = targets.length - 1; j >= 0; j--) 
-            {
+            {   
                 const target:GameObject = targets[j] as GameObject;
                 
                 if (target.getBounds().contains(bullet.position)) 
